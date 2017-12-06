@@ -1,0 +1,47 @@
+El programa se esta ejecutando...
+Inicio Programa: 04/10/17 11:59:38
+
+iFechaFin: 20171004
+
+sFechaIni: 2017-10-03
+
+sFechaFin: 2017-10-03
+
+Pausa para Eliminar ECOMMERCE_SOPORTE_VENTA sleep(60 seg)
+[Ini paso 1]
+[crearPaso1]Exception:Unable to open file 'C:\Share\Inbound\CumplimientoKpiWeb\Teradata\cumplimientokpiweb.txt'for 'LOAD DATA LOCAL INFILE' command.Due to underlying IOException: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.io.FileNotFoundException
+MESSAGE: C:\Share\Inbound\CumplimientoKpiWeb\Teradata\cumplimientokpiweb.txt (El sistema no puede encontrar la ruta especificada)
+
+STACKTRACE:
+
+java.io.FileNotFoundException: C:\Share\Inbound\CumplimientoKpiWeb\Teradata\cumplimientokpiweb.txt (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.mysql.jdbc.MysqlIO.sendFileToServer(MysqlIO.java:3898)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:3094)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:2266)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2687)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2719)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2450)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2371)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2355)
+	at cl.org.is.api.job.LoadDataCumplimientoKpiWeb.ejecutarPaso1(LoadDataCumplimientoKpiWeb.java:223)
+	at cl.org.is.api.job.LoadDataCumplimientoKpiWeb.crearTxt(LoadDataCumplimientoKpiWeb.java:137)
+	at cl.org.is.api.job.LoadDataCumplimientoKpiWeb.main(LoadDataCumplimientoKpiWeb.java:70)
+
+
+** END NESTED EXCEPTION **
+
+
+Archivos creados.
+
+Fin Programa: 04/10/17 11:59:38
+
+El programa finalizo.
